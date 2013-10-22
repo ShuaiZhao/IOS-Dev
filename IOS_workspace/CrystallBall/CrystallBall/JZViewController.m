@@ -18,7 +18,14 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    
+    self.prediction = [[NSArray alloc] initWithObjects:@"It is Certain",
+                       @"It is decidedly so,xxxxxxxxxxxxxxxxx",
+                       @"My reply is so",
+                       @"It is doubtful",
+                       @"Better not tell you now",
+                       @"Unable to answer now",
+                       nil];
+
 }
 
 //- (void)viewDidAppear:(BOOL)animated{
@@ -35,7 +42,9 @@
 
 - (IBAction)buttonPressed {
     //NSLog(@"Botton Pressed");
-    self.predicdionLabel.text = @"YES";
+    int randomNumber = arc4random_uniform(self.prediction.count);
+    self.predicdionLabel.text = [self.prediction objectAtIndex:randomNumber];
+    //self.predicdionLabel.text = @"YES";
 }
 
 

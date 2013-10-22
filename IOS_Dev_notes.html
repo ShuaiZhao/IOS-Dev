@@ -19,5 +19,83 @@ left upper corner is (x,y) = (0,0)
 	x is getting bigger to right
 	y is getting bigger to bottom
 
-Use "IBAcation and IBOulte" to connect controls to our codes
+understanding views and view controller
+	Anatomy of a UIView
+		UIView has subviews
+	View Controller
+		Manage view reizing
+		interacation with views
+		handle events
+		coordinating with data model or other view controllers
+		View life cycle:
+				view doesnt exist in memory
+						|
+					ViewDidLoad / ViewDidAppear
+						|
+					viewWillAppear
+						|
+					view Appears on Screen
+						|
+					viewWillDisappear
+						|
+					view not visible on screen
+						|
+					viewDidUnload
+	CGRect and Frame
+		UIVIew 
+			Frame
+				size
+					width/height
+				origin
+					X/Y
+		Open Xcode help documnetation: Command + option +shift + ?
 
+		Use "IBAcation and IBOulte" to connect controls to our codes
+
+
+Creating a Data Collection: NSArray
+	 NSArray *predictions = [[NSArray alloc] initWithObjects:@"It is Certain",
+    @"It is decidedly so,xxxxxxxxxxxxxxxxx",
+    @"My reply is so",
+    @"It is doubtful",
+    @"Better not tell you now",
+    @"Unable to answer now",
+    nil];
+
+    create a @property.
+    	create once and can be accessed anywhere
+    	create @property in head file, then you access this property using self.xxxx in the implementation file
+    		@property(strong, nonatomic) NSArray * prediction;
+    			two qualifiers:
+    				strong specifies an owning relationship to the destionation object
+    				weak is the opposite
+    				nonatomic: Tell complile not to use multi-threading
+    				nonatomic is default
+
+    Randomization
+    	random(max_number);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
