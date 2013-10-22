@@ -18,12 +18,29 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
 }
+
+//- (void)viewDidAppear:(BOOL)animated{
+//    [super viewDidAppear:animated];
+//    CGRect frame = self.predicdionLabel.frame;
+//    self.predicdionLabel.frame = CGRectMake(20, 200, frame.size.width, frame.size.height);
+//}
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+- (IBAction)buttonPressed {
+    //NSLog(@"Botton Pressed");
+    self.predicdionLabel.text = @"YES";
+}
+
+
+
+
+
 
 @end

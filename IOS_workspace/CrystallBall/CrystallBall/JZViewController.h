@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface JZViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UILabel *predicdionLabel;
+- (IBAction)buttonPressed;
 
 @end
