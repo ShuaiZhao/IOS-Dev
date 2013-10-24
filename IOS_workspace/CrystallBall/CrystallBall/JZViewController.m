@@ -7,6 +7,7 @@
 //
 
 #import "JZViewController.h"
+#import "JZCrystallBall.h"
 
 @interface JZViewController ()
 
@@ -18,14 +19,8 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    self.prediction = [[NSArray alloc] initWithObjects:@"It is Certain",
-                       @"It is decidedly so,xxxxxxxxxxxxxxxxx",
-                       @"My reply is so",
-                       @"It is doubtful",
-                       @"Better not tell you now",
-                       @"Unable to answer now",
-                       nil];
-
+    self.crystalBall = [[JZCrystallBall alloc] init];
+    
 }
 
 //- (void)viewDidAppear:(BOOL)animated{
@@ -42,9 +37,13 @@
 
 - (IBAction)buttonPressed {
     //NSLog(@"Botton Pressed");
-    int randomNumber = arc4random_uniform(self.prediction.count);
-    self.predicdionLabel.text = [self.prediction objectAtIndex:randomNumber];
+    //int randomNumber = arc4random_uniform(self.prediction.count);
+    //self.predicdionLabel.text = [self.prediction objectAtIndex:randomNumber];
+    //const int n = [self.prediction count];
     //self.predicdionLabel.text = @"YES";
+    
+    self.predicdionLabel.text = [self.crystalBall randomPrediction];
+    
 }
 
 

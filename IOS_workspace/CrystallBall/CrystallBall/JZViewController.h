@@ -8,9 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
+// a forward declaration
+@class JZCrystallBall;
+
+
 @interface JZViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UILabel *predicdionLabel;
+@property  (strong,nonatomic) JZCrystallBall *crystalBall;
 - (IBAction)buttonPressed;
 
-@property(strong, nonatomic) NSArray * prediction;
 @end

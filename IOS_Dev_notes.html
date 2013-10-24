@@ -75,9 +75,72 @@ Creating a Data Collection: NSArray
     Randomization
     	random(max_number);
 
+Refactoring into a Model (MVC model-view-controller)
+	create a custom class
+		put data into model
+		Single Responsibility Principle: Every class should have a single resposibility
+		RightClick CrystallBall project Folder - new File under IOS tage - new Objective-C class
+			it will create JZCrystallBall.h/m two files
+
+	understanding @property (strong,nonatomic) NSArray *predictions;
+		instance variable *_prediction will be automatically generated
+			NSArray *_prediction; 
+		getter and setter functions will automatic generate for predictions instance variable
+			- (NSString*) predictions;
+			- (void) SetPredictions: (NSArray*) newPredictions;
+	We can explicity define our own getter and setter in class implemetation file
 
 
+	readonly property @property (strong,nonatomic, readonly) NSArray *predictions;
+		Now must specify intance variable
+			NSArray *_prediction;
 
+	forward declarion
+		Never import class from interface file
+			do @class CLASSNAME
+			Then import CLASSNAME.h in the implementation file
+				#import "CLASSNAME.h"
+
+	Example:
+		JZCrystallBall.h
+
+				@interface JZCrystallBall : NSObject{
+				    NSArray *_predictions;
+				}
+
+				@property (strong,nonatomic, readonly) NSArray *predictions;
+
+				- (NSString *) randomPrediction;
+
+				@end
+
+		JZCrystabllBall.m
+
+			#import "JZCrystallBall.h"
+
+			@implementation JZCrystallBall
+			-(NSArray *) predictions{
+			    if(_predictions == Nil)
+			        _predictions = [[NSArray alloc] initWithObjects:@"It is Certain",
+			                        @"It is decidedly so,xxxxxxxxxxxxxxxxx",
+			                        @"My reply is so",
+			                        @"It is doubtful",
+			                        @"Better not tell you now",
+			                        @"Unable to answer now",
+			                        nil];
+			    return _predictions;
+			}
+
+			- (NSString *) randomPrediction{
+			    int randomNumber = arc4random_uniform(self.predictions.count);
+			    return [_predictions objectAtIndex:randomNumber];
+			    //return Nil;
+			}
+
+			@end
+NOTES;
+	Command+B: build
+	Command+R: run
 
 
 

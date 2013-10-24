@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		043517671819781D005F9262 /* JZCrystallBall.m in Sources */ = {isa = PBXBuildFile; fileRef = 043517661819781D005F9262 /* JZCrystallBall.m */; };
 		0489CD4B1811DA39008EF2BF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0489CD4A1811DA39008EF2BF /* Foundation.framework */; };
 		0489CD4D1811DA39008EF2BF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0489CD4C1811DA39008EF2BF /* CoreGraphics.framework */; };
 		0489CD4F1811DA39008EF2BF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0489CD4E1811DA39008EF2BF /* UIKit.framework */; };
@@ -34,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		043517651819781D005F9262 /* JZCrystallBall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZCrystallBall.h; sourceTree = "<group>"; };
+		043517661819781D005F9262 /* JZCrystallBall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZCrystallBall.m; sourceTree = "<group>"; };
 		0489CD471811DA39008EF2BF /* CrystallBall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CrystallBall.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0489CD4A1811DA39008EF2BF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		0489CD4C1811DA39008EF2BF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -117,6 +120,8 @@
 				0489CD601811DA39008EF2BF /* JZViewController.m */,
 				0489CD621811DA39008EF2BF /* Images.xcassets */,
 				0489CD511811DA39008EF2BF /* Supporting Files */,
+				043517651819781D005F9262 /* JZCrystallBall.h */,
+				043517661819781D005F9262 /* JZCrystallBall.m */,
 			);
 			path = CrystallBall;
 			sourceTree = "<group>";
@@ -250,6 +255,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				043517671819781D005F9262 /* JZCrystallBall.m in Sources */,
 				0489CD5B1811DA39008EF2BF /* JZAppDelegate.m in Sources */,
 				0489CD611811DA39008EF2BF /* JZViewController.m in Sources */,
 				0489CD571811DA39008EF2BF /* main.m in Sources */,
