@@ -112,8 +112,6 @@
 		043DEB4C182825F500ADEDB5 /* Matchismo */ = {
 			isa = PBXGroup;
 			children = (
-				043DEB55182825F500ADEDB5 /* CardGameAppDelegate.h */,
-				043DEB56182825F500ADEDB5 /* CardGameAppDelegate.m */,
 				043DEB58182825F500ADEDB5 /* Main.storyboard */,
 				043DEB5B182825F500ADEDB5 /* CardGameViewController.h */,
 				043DEB5C182825F500ADEDB5 /* CardGameViewController.m */,
@@ -126,6 +124,8 @@
 		043DEB4D182825F500ADEDB5 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				043DEB55182825F500ADEDB5 /* CardGameAppDelegate.h */,
+				043DEB56182825F500ADEDB5 /* CardGameAppDelegate.m */,
 				043DEB4E182825F500ADEDB5 /* Matchismo-Info.plist */,
 				043DEB4F182825F500ADEDB5 /* InfoPlist.strings */,
 				043DEB52182825F500ADEDB5 /* main.m */,
